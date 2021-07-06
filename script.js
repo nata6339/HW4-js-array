@@ -10,3 +10,9 @@ ask(
     () => console.log("Вы отменили выполнение.")
 );
 
+console.log('------------- # 5')
+
+let str = 'my-short-string';
+let arr = str.split('-');
+console.log(arr);
+
