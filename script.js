@@ -25,5 +25,11 @@ console.log(str2);
 console.log('------------- # 7')
 
 let users = [{id: 1, name: "Vic", age: 21},  {id: 2, name: "Petya", age: 30}, {id: 3, name: "Jon", age: 5}];
-let youngUser = users.filter(item => item.age<20);
+let youngUser = users.filter(item => item.age < 20);
 console.log(youngUser);
+
+console.log('------------- # 8')
+
+let users1 = [{id: 1, name: "Vic", age: 21},  {id: 2, name: "Petya", age: 30}, {id: 3, name: "Jon", age: 5}];
+let names = users1.map(item => item.name);
+console.log( names );
