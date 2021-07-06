@@ -39,9 +39,9 @@ console.log('------------- # 9')
 function filterRangeInPlace(numbers, a, b) {
 
     for (let i = 0; i < numbers.length; i++) {
-        let val = numbers[i];
+        let newNum = numbers[i];
 
-        if (val < a || val > b) {
+        if (newNum < a || newNum > b) {
             numbers.splice(i, 1);
             i--;
         }
@@ -54,5 +54,49 @@ filterRangeInPlace(numbers, 2, 5);
 console.log(numbers);
 
 console.log('------------- # 10')
+
+function arrFrom(text, separator) {
+
+    return text.split(separator);
+}
+
+const result = arrFrom('my-short-string', '-');
+console.log(result);
+
 console.log('------------- # 11')
+
+let newArr = [1, 2, 3, 4, 5];
+function slArray (newArr, startIndex, endIndex) {
+
+    return newArr.slice(startIndex, endIndex);
+}
+const range = slArray(newArr, 2, 4);
+console.log(range);
+console.log(newArr);
+
+
 console.log('------------- # 12')
+
+// function sum(a, b, c, d) {
+//     return a + b + c + d;
+// }
+// let calc = [1, 2, 3, 7];
+//
+// console.log(sum(...calc));
+
+function sum() {
+    let result = 0;
+
+    for (let i = 0; i < calc.length; i++) {
+        result += calc[i];
+    }
+
+    return result;
+}
+
+let calc = [1, 2, 4, 7];
+
+console.log(sum(...calc));
+
+
+
