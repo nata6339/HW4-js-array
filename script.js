@@ -16,3 +16,8 @@ let str = 'my-short-string';
 let arr = str.split('-');
 console.log(arr);
 
+console.log('------------- # 6')
+
+let arr2 = ['JavaScript', 2015];
+let str2 = arr2.join (' ');
+console.log(str2);
